@@ -1,0 +1,31 @@
+
+  
+
+<div class="container">
+
+  <br><br>
+  <h1>Arandjelovac 1990. god.</h1>
+  <br>
+  <app-search></app-search>
+
+  <br><br>
+  <ul>
+    <li *ngFor="let slika of slike">
+      <a href="{{slika.imageUrl}}">
+        <img src="{{slika.imageUrl}}" alt="">
+        
+        <div class="content">
+          <span class="name">
+            {{slika.name}}
+          
+          </span>
+          
+        </div>
+
+      </a>
+     
+    </li>
+  </ul>
+
+
+</div>

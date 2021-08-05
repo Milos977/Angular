@@ -1,0 +1,24 @@
+
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li a{
+  height: 22.5rem;
+  width: 20rem;
+  color: rgb(37, 36, 36);
+  margin: 0.9rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.content{
+  padding-top: 1rem;
+}

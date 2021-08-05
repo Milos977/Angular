@@ -1,0 +1,30 @@
+<div class="login-wrapper">
+    <div class="card">
+        <div class="card-body">
+            <form class="form-signin" (ngSubmit)="onSubmit(signInForm)" #signInForm="ngForm">
+                <h1 class="h3 mb-3 font-weight-normal">Ulogujte se</h1>
+
+
+                <label for="inputPassword" class="sr-only">Korisnicko ime</label>
+                <input type="username" id="inputPassword" class="form-control" name="password" placeholder="milos123"
+                    autocomplete="on" ngModel required>
+
+                <label for="inputlogin" class="sr-only">Email </label>
+                <input type="text" id="inputLogin" class="form-control" name="login" placeholder="milos@mail.com" ngModel
+                    required autofocus>
+
+
+                <button class="btn btn-warning btn-lg form-control" type="submit" style="color: #fff;letter-spacing: 0.2em;">Klikni</button>
+
+                <div class="alert alert-danger" role="alert" *ngIf="isFormValid">
+                    Molim Vas popunite oba polja.
+                </div>
+                <div class="alert alert-danger" role="alert" *ngIf="areCredentialsInvalid">
+                    Korisnicko ime: milos123 <br/>
+                    Mail: milos@mail.com
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
